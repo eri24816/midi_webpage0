@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expansion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Literata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="">Generation</h1>
+  </header>
+
+  <main>
+    <div id="content-div">
+      
+    <section id="intro">
+      <p>
+        Ouo
+      </p>
+    </section>
+      
+    <section id="inpainted-music">
+
+      <h2> Demo 1 </h2>
+
+      <!-- input: models, song_idx -->
+      <section id="inpainted-music-song-1">
+        <h3>Song 1</h3>
+        <div class='anchor-container'>
+          <a midi-url="static/midi/6similar/0.mid"class='selected'>Ours</a>
+          <a midi-url="https://cdn.jsdelivr.net/gh/tanchihpin0517/structure-aware_infilling/docs/assets/songs/VLI/0.midi">VLI</a>
+          <a midi-url="https://cdn.jsdelivr.net/gh/tanchihpin0517/structure-aware_infilling/docs/assets/songs/Hsu/0.midi">Hsu</a>
+          <a midi-url="https://cdn.jsdelivr.net/gh/tanchihpin0517/structure-aware_infilling/docs/assets/songs/Real/0.midi">Real</a>
+          <a midi-url="https://cdn.jsdelivr.net/gh/tanchihpin0517/structure-aware_infilling/docs/assets/songs/Copy/0.midi">Copy</a>
+        </div>
+        <midi-visualizer id='inpainted-music-song-1-visualizer'
+          src="static/midi/6similar/0.mid">
+        </midi-visualizer>
+        <midi-player id='inpainted-music-song-1-player'
+          src="static/midi/6similar/0.mid"
+          sound-font="https://storage.googleapis.com/magentadata/js/soundfonts/salamander"
+          visualizer="#inpainted-music-song-1-visualizer">
+        </midi-player>
+      </section>
+
+
+      <p>website stoled from https://github.com/tanchihpin0517/structure-aware_infilling/</p>
+
+    </section>
+    </div>
+
+    <footer class="site-footer">
+      <span class="site-footer-credit">We use
+        <a target='_blank' href='https://github.com/cifkao/html-midi-player'>html_midi_player</a>
+        built and kindly shared publicly by
+        <a target='_blank' href="https://ondrej.cifka.com">Ondřej Cífka</a>
+        for visualizing the piano rolls of the MIDI files. We have also made this implementation
+        of the website public at the <a target='_blank'
+          href="https://github.com/tanchihpin0517/structure-aware_infilling">Github repository</a>.
+      </span>
+    </footer>
+  </main>
+  <script
+    src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.0"></script>
+
+</body>
+
+</html>
